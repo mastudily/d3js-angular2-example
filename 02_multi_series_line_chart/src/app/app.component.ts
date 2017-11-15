@@ -100,6 +100,7 @@ export class AppComponent implements OnInit {
     city.append("path")
       .attr("class", "line")
       .attr("d", (d) => this.line(d.values) )
+      .attr("fill", "none")
       .style("stroke", (d) => this.z(d.id) );
 
     city.append("text")
